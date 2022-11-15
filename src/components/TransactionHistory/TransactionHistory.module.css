@@ -1,0 +1,44 @@
+.transactionHistory {
+  margin-left: 20px;
+  width: 900px;
+}
+
+.headerRow {
+  background-color: lightseagreen;
+}
+
+.headerItems {
+  text-transform: uppercase;
+  color: tomato;
+  padding: 40px;
+}
+
+.mainRow {
+  text-align: center;
+}
+
+.mainRow:nth-child(2n + 2) {
+  background-color: yellow;
+  color: blue;
+}
+
+.mainRow:nth-child(2n + 1) {
+  background-color: blue;
+  color: yellow;
+}
+
+.mainRow:nth-child(2n + 2):hover,
+.mainRow:nth-child(2n + 2):focus {
+  background-color: lightseagreen;
+  color: tomato;
+}
+
+.mainRow:nth-child(2n + 1):hover,
+.mainRow:nth-child(2n + 1):focus {
+  background-color: lightseagreen;
+  color: tomato;
+}
+
+.mainItems {
+  padding: 30px;
+}

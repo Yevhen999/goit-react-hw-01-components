@@ -1,0 +1,30 @@
+.item {
+  display: flex;
+  align-items: center;
+  background-color: yellow;
+  outline: 1px solid blue;
+  margin-bottom: 20px;
+}
+
+.item:hover,
+.item:focus {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  background-color: blue;
+  color: yellow;
+}
+
+.isOnline {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: tomato;
+  margin-left: 10px;
+}
+
+.isOffline {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+  margin-left: 10px;
+}
