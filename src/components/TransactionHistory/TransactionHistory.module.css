@@ -29,12 +29,16 @@
 
 .mainRow:nth-child(2n + 2):hover,
 .mainRow:nth-child(2n + 2):focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   background-color: lightseagreen;
   color: tomato;
 }
 
 .mainRow:nth-child(2n + 1):hover,
 .mainRow:nth-child(2n + 1):focus {
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+    rgba(0, 0, 0, 0.22) 0px 15px 12px;
   background-color: lightseagreen;
   color: tomato;
 }
