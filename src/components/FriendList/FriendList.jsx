@@ -1,4 +1,5 @@
-import css from './FriendList.module.css';
+import { FriendsList } from './FriendList.styled';
+
 export const FriendList = ({ children }) => {
-  return <ul className={css.friendsList}>{children}</ul>;
+  return <FriendsList>{children}</FriendsList>;
 };
