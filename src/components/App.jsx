@@ -3,16 +3,19 @@ import { Statistics } from './Statistics/Statistics';
 import { FriendList } from './FriendList/FriendList';
 import { FriendListItem } from './FriendListItem/FriendListItem';
 import { TransactionHistory } from './TransactionHistory/TransactionHistory';
+
 import user from '../database/user.json';
 import data from '../database/data.json';
 import friends from '../database/friends.json';
 import transactions from '../database/transactions.json';
 
+import { Container } from './App.styled';
+
 export const App = () => {
   return (
-    <div
+    <Container
       style={{
-        height: '100vh',
+        // height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         alignItems: 'center',
@@ -32,6 +35,6 @@ export const App = () => {
         <FriendListItem friends={friends} />
       </FriendList>
       <TransactionHistory items={transactions} />
-    </div>
+    </Container>
   );
 };
