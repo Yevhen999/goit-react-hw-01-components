@@ -1,9 +1,10 @@
 import css from './Profile.module.css';
 import PropTypes from 'prop-types';
+import { ProfileWrapper } from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
-    <div className={css.profile}>
+    <ProfileWrapper>
       <div className={css.description}>
         <img src={avatar} alt="User avatar" className={css.avatar} />
         <p className={css.username}>{username}</p>
@@ -25,7 +26,7 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
           <span className={css.quantity}>{stats.likes}</span>
         </li>
       </ul>
-    </div>
+    </ProfileWrapper>
   );
 };
 
