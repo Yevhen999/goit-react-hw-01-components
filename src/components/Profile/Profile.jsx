@@ -1,4 +1,3 @@
-import css from './Profile.module.css';
 import PropTypes from 'prop-types';
 import {
   ProfileWrapper,
@@ -7,6 +6,10 @@ import {
   Username,
   Tag,
   Location,
+  StatsList,
+  StatsItem,
+  Label,
+  Quantity,
 } from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
@@ -19,20 +22,20 @@ export const Profile = ({ username, tag, location, avatar, stats }) => {
         <Location>{location}</Location>
       </Description>
 
-      <ul className={css.stats}>
-        <li className={css.item}>
-          <span className={css.label}>Followers</span>
-          <span className={css.quantity}>{stats.followers}</span>
-        </li>
-        <li className={css.item}>
-          <span className={css.label}>Views</span>
-          <span className={css.quantity}>{stats.views}</span>
-        </li>
-        <li className={css.item}>
-          <span className={css.label}>Likes</span>
-          <span className={css.quantity}>{stats.likes}</span>
-        </li>
-      </ul>
+      <StatsList>
+        <StatsItem>
+          <Label>Followers</Label>
+          <Quantity>{stats.followers}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label>Views</Label>
+          <Quantity>{stats.views}</Quantity>
+        </StatsItem>
+        <StatsItem>
+          <Label>Likes</Label>
+          <Quantity>{stats.likes}</Quantity>
+        </StatsItem>
+      </StatsList>
     </ProfileWrapper>
   );
 };

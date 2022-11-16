@@ -27,3 +27,31 @@ export const Tag = styled.p`
 export const Location = styled.p`
   color: #ff6b08;
 `;
+
+export const StatsList = styled.ul`
+  list-style: none;
+  display: flex;
+  padding-left: 0;
+`;
+
+export const StatsItem = styled.li`
+  width: calc(100% / 3);
+  padding-left: 15px;
+  padding-right: 15px;
+  &:hover {
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
+      rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background-color: blue;
+  }
+`;
+
+export const Label = styled.span`
+  display: block;
+  text-align: center;
+`;
+
+export const Quantity = styled.span`
+  display: block;
+  text-align: center;
+  font-weight: 500;
+`;
