@@ -1,17 +1,22 @@
 import css from './Profile.module.css';
 import PropTypes from 'prop-types';
-import { ProfileWrapper } from './Profile.styled';
-import { Description } from './Profile.styled';
-import { Avatar } from './Profile.styled';
+import {
+  ProfileWrapper,
+  Description,
+  Avatar,
+  Username,
+  Tag,
+  Location,
+} from './Profile.styled';
 
 export const Profile = ({ username, tag, location, avatar, stats }) => {
   return (
     <ProfileWrapper>
       <Description>
         <Avatar src={avatar} alt="User avatar" />
-        <p className={css.username}>{username}</p>
-        <p className={css.tag}>@{tag}</p>
-        <p className={css.location}>{location}</p>
+        <Username>{username}</Username>
+        <Tag>@{tag}</Tag>
+        <Location>{location}</Location>
       </Description>
 
       <ul className={css.stats}>

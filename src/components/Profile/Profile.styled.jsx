@@ -15,3 +15,15 @@ export const Avatar = styled.img`
   border: 1px solid tomato;
   border-radius: 100%;
 `;
+
+export const Username = styled.p`
+  font-weight: 500;
+`;
+
+export const Tag = styled.p`
+  font-style: italic;
+`;
+
+export const Location = styled.p`
+  color: #ff6b08;
+`;

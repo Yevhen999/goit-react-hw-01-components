@@ -1,15 +1,3 @@
-.username {
-  font-weight: 500;
-}
-
-.tag {
-  font-style: italic;
-}
-
-.location {
-  color: #ff6b08;
-}
-
 .stats {
   list-style: none;
   display: flex;
