@@ -32,12 +32,13 @@ export const StatsList = styled.ul`
   list-style: none;
   display: flex;
   padding-left: 0;
+  margin-top: 0;
+  margin-bottom: 0;
 `;
 
 export const StatsItem = styled.li`
   width: calc(100% / 3);
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px,
       rgba(0, 0, 0, 0.22) 0px 15px 12px;

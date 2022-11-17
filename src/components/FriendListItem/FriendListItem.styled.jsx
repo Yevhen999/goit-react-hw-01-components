@@ -19,8 +19,5 @@ export const FriendOnline = styled.span`
   height: 20px;
   border-radius: 50%;
   margin-left: 10px;
-  background-color: ${props => {
-    console.log(props.isOnline);
-    return props.isOnline ? 'blue' : 'black';
-  }};
+  background-color: ${props => (props.isOnline ? 'blue' : 'black')};
 `;
